@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Reservation System</title>
+    <style>
+        body {
+            background-image: url('https://img.freepik.com/free-photo/thai-retro-train-kanchanaburi-thailand_335224-778.jpg?w=1060&t=st=1698995486~exp=1698996086~hmac=4d35227479c832342da68f951351850d8e8a880b9306094a33e81b43a16f86ec'); /* Replace 'train_background.jpg' with your background image file path */
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-box {
+            background: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .register-link {
+            margin-top: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Add styles for the navigation bar */
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            float: right;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: #007BFF;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #007BFF;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="#">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Official Use</button>
+            <div class="dropdown-content">
+                <a href="official_login.html">Login</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="login-box">
+            <h1>Online Reservation System</h1>
+            <form action="validateuser" method="post">
+                <label for="username">User Name:</label>
+                <input type="text" id="username" name="username" required>
+                <br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <br><br>
+                <input type="submit" value="Login">
+            </form>
+
+            <div class="register-link">
+                <p>Don't have an account? <a href="registration.html">Register here</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

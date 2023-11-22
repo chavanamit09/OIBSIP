@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+
+    .login-container {
+      width: 300px;
+      margin: 100px auto;
+      padding: 50px;
+      background-color: aqua;  
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 24px;
+    }
+
+    .input-container {
+      margin-top: 20px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #333;
+      background-color: #222;
+      color: #fff;
+      border-radius: 5px;
+    }
+
+    .btn-container {
+      text-align: center;
+    }
+
+    .login-btn,
+    .cancel-btn {
+      background-color: #3498db;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 5px;
+    }
+
+    .cancel-btn {
+      background-color: #e74c3c;
+    }
+    h1 {
+	margin-top: 5%;
+}
+  </style>
+</head>
+<body>
+   
+    <h1 align="center" >Official Login For Online Reservation System</h1>
+    <form action="loginvalidateofficial" method="post">
+  <div class="login-container">
+    <div class="input-container">
+      <input type="text" placeholder="Username" name="username">
+      <input type="password" placeholder="Password" name="password">
+    </div>
+    <div class="btn-container">
+      <button class="login-btn">Login</button>
+      <button class="cancel-btn"><a href="login_page.html">Cancel</a></button>
+    </div>
+  </div>
+  </form>
+</body>
+</html>

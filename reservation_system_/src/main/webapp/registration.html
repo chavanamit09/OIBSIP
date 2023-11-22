@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Page</title>
+    <style>
+        body {
+           background-color: gray;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .registration-box {
+            background: rgba(255, 255, 255, 0.7);
+            padding: 50px;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin: 2px;
+            text-align: left;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #333;
+            border-radius: 5px;
+        }
+
+        .register-button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .cancel-button {
+            background-color: #ccc;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="registration-box">
+            <h1>Registration Page</h1>
+            <form action="resisterme" method="post">
+                <label for="name">Name:</label>
+                <input type="text" name="name" placeholder="Enter your Name" required>
+                <label for="email">Email ID:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="userId">User ID:</label>
+                <input type="text" id="userId" name="userId" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <label for="contact">Contact No:</label>
+                <input type="tel" id="contact" name="contact" required>
+                <br><br>
+                <button class="register-button" type="submit">Register</button>
+                <button class="cancel-button" type="button">Cancel</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
